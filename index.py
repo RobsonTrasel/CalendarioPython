@@ -2,9 +2,10 @@ from tkinter import *
 import tkinter as tk
 
 
-from PIL import Image, 
+from PIL import ImageTk, Image
 import calendar
 
+#Definindo tamanho e titulo da janela!
 original = tk.Tk()
 original.geometry('400x300')
 original.title("Calendario")
@@ -48,6 +49,6 @@ show.place(x=140,y=250)
 clear = Button(original,text="Limpar",font=('verdana',10,'bold'),relief=RIDGE,borderwidth=2,command=clear)
 clear.place(x=200,y=250)
 
-exit = Button(original,text="Sair",font=('verdana',10,'bold'),relief=RIDGE,borderwidth=2,command=exit)
+exit = Button(original,text="Exit",font=('verdana',10,'bold'),relief=RIDGE,borderwidth=2,command=exit)
 exit.place(x=260,y=250)
 original.mainloop()
